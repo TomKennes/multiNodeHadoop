@@ -1,0 +1,10 @@
+docker network create --subnet=172.18.0.0/16 hadoopnet
+SHA256:cb1d6e0ce2af84f0d17cbdf66349017b2590fd7acf692c82e4772bdf7911698b
+
+docker run -it  -d `
+--net hadoopnet --ip 172.18.1.1 --hostname ub `
+--add-host node2:172.18.1.2 `
+--add-host node3:172.18.1.3 `
+--name ub ub
+nodemaster hadoopbase
+
