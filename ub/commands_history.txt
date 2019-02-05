@@ -1,0 +1,20 @@
+# Bash
+service ssh start
+service ssh stop
+service ssh restart
+apt-get install vim
+vim /etc/ssh/sshd_config
+adduser test
+passwd root
+
+# Docker
+docker port <container name>
+ssh user@localhost -p connected port
+ssh test@localhost -p connected port
+
+
+# Next questions:
+- How do I set up SSH-keys!
+- How do I set up SSH-certificates!
+## After that:
+- How can I logon on another application on a different host?
